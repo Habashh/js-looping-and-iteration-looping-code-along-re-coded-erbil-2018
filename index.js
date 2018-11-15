@@ -1,14 +1,18 @@
 // Code your solutions in this file
-var printbadges=['Lisa', 'Kaitlin', 'Jan'];
-function printBadges(){
-  for(var i=0; i <= printbadges.length; i++){
-  console.log(printbadges[i]);
+function printBadges (names) {
+  for (let i = 0; i < names.length; i++) {
+    console.log(`Welcome ${names[i]}! You are employee #${i + 1}.`);
   }
-}printBadges();
 
+  return names;
+}
 
-var printbadges=['Joe', 'Gabe'];
- 
-  for(var i=0; i<= printbadges.length; i++){
-  console.log(`Welcome ${printbadges[i]}! You are employee #${i}.`);
+function tailsNeverFails () {
+  let tails = 0;
+
+  while (Math.random() >= 0.5) {
+    tails++;
   }
+
+  return `You got ${tails} tails in a row!`;
+}
