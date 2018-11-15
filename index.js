@@ -9,6 +9,7 @@ function printBadges(){
 
 var printbadges=['Joe', 'Gabe'];
  
-  for(var i=0; i<= printbadges.length; i++){
+ var i=0;
+ while(i<= printbadges.length){
   console.log(`Welcome ${printbadges[i]}! You are employee #${i}.`);
-  }
+  }i++;
